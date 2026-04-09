@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>Form Pendaftaran</title>
+  <link rel="stylesheet" href="exams.css">
+</head>
+<body>
+<div class="mainbox">
+  <h2>Formulir Pendaftaran Siswa</h2>
+
+  <label> Nama Lengkap </label>
+  <input type="text" id="nama" class="text" placeholder="Contoh: Muhammad Raihan">
+
+  <label> Kelas </label>
+  <input type="text" id="kelas" class="text" placeholder="Contoh: XII IPA 2/ 11A/ 7B">
+
+  <div class="group">
+    <label> PILIH EKSTRAKULIKULER (3 PILIHAN) </label>
+	 <div class="boxx">
+      <label><input type="checkbox" name="EKSTRAKULIKULER" value="Basket"> Basket</label>
+      <label><input type="checkbox" name="EKSTRAKULIKULER" value="Futsal"> Futsal</label>
+      <label><input type="checkbox" name="EKSTRAKULIKULER" value="Paduan Suara"> Paduan Suara</label>
+	 </div>
+  </div>
+  
+  <div class="group">
+    <label> PILIH JADWAL BELAJAR (WAJIB PILIH SALAH SATU) </label>
+	 <div class="boxx">
+      <label><input type="radio" name="JADWAL" value="1"> Pagi (07:00-12:00) </label>
+      <label><input type="radio" name="JADWAL" value="2"> Siang (12:30-17:00) </label>
+      <label><input type="radio" name="JADWAL" value="3"> Sore (17:30-20:30) </label>
+	  <label><input type="radio" name="JADWAL" value="4"> Campuran (fleksibel) </label>
+	 </div>
+  </div>
+
+  <div class="output" id="output"></div>
+
+<div class="tombol">
+  <button id="tampil" class="btn ok">Daftar Sekarang</button>
+  <button id="tampil" class="btn clear" >Reset form</button>
+</div>
+</div>
+<script src="exams.js"></script>
+</body>
+</html>
